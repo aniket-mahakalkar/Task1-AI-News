@@ -5,3 +5,4 @@ gtts
 imageio
 lxml
 moviepy==1.0.3
+dotenv
