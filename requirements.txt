@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+google-generativeai
+gtts
+imageio
+lxml
+moviepy==1.0.3
