@@ -57,3 +57,26 @@ response = requests.get(url)
 soup = BeautifulSoup(response.content, 'xml')
 items = soup.find_all('item')[:4]
 
+## 🧠 Step 2: Generate Script Using Gemini
+
+Once we have the trending news headlines, the next step is to convert each headline into a short, spoken-style script.
+
+### ✅ What Happens in This Step?
+
+- The app uses **Google Gemini 1.5 Flash**, a powerful generative AI model.
+- It sends a custom prompt to Gemini for each headline.
+- The prompt asks Gemini to:
+  - Keep the script short (30–60 seconds)
+  - Make it suitable for narration
+  - Use a conversational tone (like a human news presenter)
+
+### 🧾 Sample Prompt Sent to Gemini
+
+```python
+prompt = f"""
+Generate a short news which contains only the sentences which have to speak (30-60 seconds) based on this topic:
+"{topic}"
+
+Keep it concise, conversational
+"""
+## 🧠 Step 2: Video Creation
