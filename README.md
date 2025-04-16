@@ -32,7 +32,7 @@ An AI-powered Python application that automatically fetches trending news, gener
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ai-news-video-generator.git
+git clone https://github.com/aniket-mahakalkar/Task1-AI-News.git
 cd ai-news-video-generator
 
 # Install dependencies
